@@ -1,5 +1,11 @@
-a = [2, 5, 4, 2, 8, 5, 2]
-b = []
-for y in range(6,-1,-1):
-    b.append(a[y])
-print(b)
+from Bliblioteca_banco import *
+banco = Conta("002",0,"Cliente", "Corrente",True,0)
+
+banco.depositar(29)
+banco.depositar(3)
+
+banco.sacar(100)
+banco.verificar_saldo()
+banco.ativar_conta()
+
+----------------------------------------
